@@ -11,7 +11,7 @@ spring:
     hibernate:
       ddl-auto: update
 env:
-  dev2
+  dev23
 girl:
   name: lilly
   age: 26
