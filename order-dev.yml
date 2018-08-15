@@ -15,8 +15,11 @@ spring:
       port: 5672
       username: guest
       password: guest
+  redis:
+    host: 127.0.0.1
+    port: 6379
 env:
-  dev25
+  dev
 girl:
   name: lilly
   age: 26
