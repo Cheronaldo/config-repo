@@ -1,1 +1,14 @@
-
+spring:
+  application:
+    name: api-gateway
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/sell_cloud?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: cr123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+env:
+  dev
