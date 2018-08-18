@@ -1,0 +1,21 @@
+#自定义zuul路由
+zuul:
+  routes:
+#  这个名字随意取，但路径名和服务id为指定
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+#      设置cookie能够进行传递 将sensitiveHeaders 设置为空
+      sensitiveHeaders:
+#  简洁写法 routes下直接配置 服务名 + 路径
+#    product: /myProduct/**
+#使用正则表达式配置接口不对外开放
+  ignored-patterns:
+#    - /product/product/listForOrder
+#    - /myProduct/product/listForOrder
+#    使用通配符
+    - /**/product/listForOrder
+#设置为并进行安全检测
+management:
+  security:
+    enabled: false
