@@ -1,5 +1,7 @@
 #自定义zuul路由
 zuul:
+  # 全部服务忽略敏感头 （全部服务都可以传递cookie）
+  sensitive-headers: 
   routes:
 #  这个名字随意取，但路径名和服务id为指定
     myProduct:
