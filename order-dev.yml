@@ -19,7 +19,7 @@ spring:
     host: 127.0.0.1
     port: 6379
 env:
-  dev12
+  dev1234
 girl:
   name: lilly
   age: 26
